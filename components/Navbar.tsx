@@ -44,7 +44,7 @@ export default function Navbar() {
       </nav>
 
       {showMenu && (
-        <div className='flex w-screen flex-col duration-300  pt-12 p-4 bg-white'>
+        <div className='flex w-screen flex-col duration-300 z-20 absolute pt-12 p-4 bg-white'>
           {navLinks.map(({ path, title }, i) => (
             <Link href={path} key={i}>
               <a

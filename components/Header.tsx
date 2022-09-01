@@ -13,6 +13,7 @@ export default function Header({ t1, bg }: HeaderType) {
           Discover a hotel that defines <br /> a new dimension of luxury.{' '}
         </p>
       </div>
+      <div className='bg-contact bg-room bg-about w-0 h-0'></div>
     </main>
   );
 }
