@@ -1,7 +1,7 @@
+import { StaticImageData } from 'next/image';
 import React from 'react';
 import BlogCard from '../components/BlogCard';
 import Header from '../components/Header';
-import Hero from '../components/Hero';
 import PostCard from '../components/PostCard';
 
 const DATA = [
@@ -15,7 +15,7 @@ const DATA = [
   '/xpost_4.webp',
 ];
 
-export default function blog({ img }) {
+export default function blog(img: StaticImageData[]) {
   return (
     <>
       <Header t1={'Our Blog'} bg={'about'} />
