@@ -38,6 +38,7 @@ const Home: NextPage = () => {
       </div>
       <TextCard />
       <Insta />
+      <div className='bg-contact bg-room bg-about'></div>
     </>
   );
 };

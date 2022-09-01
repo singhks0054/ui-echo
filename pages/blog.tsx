@@ -1,49 +1,47 @@
-import { StaticImageData } from 'next/image';
 import React from 'react';
 import BlogCard from '../components/BlogCard';
 import Header from '../components/Header';
 import PostCard from '../components/PostCard';
+import bg1 from '../public/xsingle_blog_1.webp';
+import bg2 from '../public/single_blog_2.png';
+import bg3 from '../public/single_blog_3.png';
+import bg4 from '../public/single_blog_4.png';
+import bg5 from '../public/xpost_1.webp';
+import bg6 from '../public/xpost_2.webp';
+import bg7 from '../public/xpost_3.webp';
+import bg8 from '../public/xpost_4.webp';
 
-const DATA = [
-  '/xsingle_blog_1.webp',
-  '/single_blog_2.png',
-  '/single_blog_3.png',
-  '/single_blog_4.png',
-  '/xpost_1.webp',
-  '/xpost_2.webp',
-  '/xpost_3.webp',
-  '/xpost_4.webp',
-];
+const DATA = [bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8];
 
-export default function blog(img: StaticImageData[]) {
+export default function blog() {
   return (
     <>
       <Header t1={'Our Blog'} bg={'about'} />
       <div className='grid grid-cols-1  lg:grid-cols-3 lg:gap-10 lg:mx-[10vw] mx-4 my-10 '>
         <div className='col-span-2 '>
           <BlogCard
-            img={img[0]}
+            img={DATA[0]}
             title='Google inks pact for new 35-storey office'
             description="That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."
             data1=' Travel, Lifestyle'
             data2='03 Comments'
           />
           <BlogCard
-            img={img[1]}
+            img={DATA[1]}
             title='Google inks pact for new 35-storey office'
             description="That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."
             data1=' Travel, Lifestyle'
             data2='03 Comments'
           />
           <BlogCard
-            img={img[2]}
+            img={DATA[2]}
             title='Google inks pact for new 35-storey office'
             description="That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."
             data1=' Travel, Lifestyle'
             data2='03 Comments'
           />
           <BlogCard
-            img={img[3]}
+            img={DATA[3]}
             title='Google inks pact for new 35-storey office'
             description="That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."
             data1=' Travel, Lifestyle'
@@ -102,22 +100,22 @@ export default function blog(img: StaticImageData[]) {
             </h1>
             <div className='m-4'>
               <PostCard
-                img={img[4]}
+                img={DATA[4]}
                 title={'From life was you fish...'}
                 description={'January 12, 2019'}
               />
               <PostCard
-                img={img[5]}
+                img={DATA[5]}
                 title={'The Amazing Hubble'}
                 description={'02 Hours ago'}
               />
               <PostCard
-                img={img[6]}
+                img={DATA[6]}
                 title={'Astronomy Or Astrology'}
                 description={'03 Hours ago'}
               />
               <PostCard
-                img={img[7]}
+                img={DATA[7]}
                 title={'Asteroids telescope'}
                 description={'01 Hours ago'}
               />
